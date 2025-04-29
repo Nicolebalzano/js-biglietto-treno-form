@@ -8,6 +8,10 @@
 </head>
 <body>
     <form action="" id="ticket-form">
+        <div>
+            <label for="name">Nome e cognome passeggero:</label>
+            <input type="tel" id="name" autocomplete="off">
+        </div>
 <div>
     <label for="km">Quanti Kilometri (km) devi percorrere?</label>
     <input type="tel" id="km" autocomplete="off">
@@ -18,6 +22,15 @@
 </div>
 <button>Invia</button>
     </form>
+    <div class="final-ticket">
+        <div class="ticket-header">Il tuo biglietto</div>
+        <div class="ticket-body">
+            <h4>Nome passeggero</h4>
+            <p id="passenger-name"></p>
+            <h3>Totale del prezzo</h3>
+            <p id="price-total"></p>
+        </div>
+    </div>
     <script src="./js/script.js""></script>
 </body>
 </html>
