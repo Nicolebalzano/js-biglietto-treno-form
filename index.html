@@ -10,31 +10,43 @@
 </head>
 
 <body>
-    <main>
+    <main class="py-5">
         <div class="container">
+             <div class="row">
+                <div class="col-12 col-lg-8">
+
     <form action="" id="ticket-form">
         <div class="row">
+            <div class="col-12 col-lg-6">
             <label for="name">Nome e cognome passeggero:</label>
             <input type="tel" id="name" autocomplete="off">
-        <div>
+        </div>
+        <div class="col-12 col-lg-6">
             <label for="km">Quanti Kilometri (km) devi percorrere?</label>
             <input type="tel" id="km" autocomplete="off">
         </div>
-        <div>
+        <div class="col-12 col-lg-6">
             <label for="age">Quanti anni hai?</label>
             <input type="tel" id="age" autocomplete="off">
         </div>
         <button>Invia</button>
     </div>
     </form>
+    </div>
+    <div class="col-12 col-lg-4">
     <div class="final-ticket">
         <div class="ticket-header">Il tuo biglietto</div>
         <div class="ticket-body">
+            <div class="row">
+                <div class="col-8">
             <h4>Nome passeggero</h4>
             <p id="passenger-name"></p>
             <h3>Totale del prezzo</h3>
             <p id="price-total"></p>
+            </div>
         </div>
+    </div>
+    </div>
     </div>
 </div>
 </main>
