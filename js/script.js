@@ -31,7 +31,6 @@ ticketElem.addEventListener("submit", handleForm)
 
 function handleForm(event) {
   event.preventDefault(); 
-console.log("ciao");
 
     // prelevo i valori dell'input
     const name = nameInput.value;
@@ -48,17 +47,17 @@ const bigliettoMinorenni = prezzoBiglietto - scontoMinorenni;
 
 const scontoOver = (prezzoBiglietto / 100) * 40;
 const bigliettoOver = prezzoBiglietto - scontoOver;
-
+let message;
  if (age < 18) {
-   console.log("Con lo sconto Minorenni (del 20% sul prezzo totale) il tuo biglietto ora costa:" + " " + bigliettoMinorenni.toFixed(2) + "€");
+  message = "Con lo sconto Minorenni (del 20% sul prezzo totale) il tuo biglietto ora costa:" + " " + bigliettoMinorenni.toFixed(2) + "€";
 } else if(age > 65) {
-    console.log("Con lo sconto Over 65 (del 40% sul prezzo totale) il tuo biglietto ora costa:" + " " + bigliettoOver.toFixed(2) + "€");
+    message = "Con lo sconto Over 65 (del 40% sul prezzo totale) il tuo biglietto ora costa:" + " " + bigliettoOver.toFixed(2) + "€";
 } else {
-    console.log("Il tuo biglietto costa:" + " " + prezzoBiglietto.toFixed(2) + "€");
-}
+    message = "Il tuo biglietto costa:" + " " + prezzoBiglietto.toFixed(2) + "€";
+} console.log(message);
 
 nameElem.innerHTML = name;
-priceElem.innerHTML = `${prezzoBiglietto}€ `;
+priceElem.innerHTML = message ;
 
 ticketElem.reset();
 

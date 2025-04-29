@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
+    <main>
+        <div class="container">
     <form action="" id="ticket-form">
-        <div>
+        <div class="row">
             <label for="name">Nome e cognome passeggero:</label>
             <input type="tel" id="name" autocomplete="off">
+        <div>
+            <label for="km">Quanti Kilometri (km) devi percorrere?</label>
+            <input type="tel" id="km" autocomplete="off">
         </div>
-<div>
-    <label for="km">Quanti Kilometri (km) devi percorrere?</label>
-    <input type="tel" id="km" autocomplete="off">
-</div>
-<div>
-    <label for="age">Quanti anni hai?</label>
-    <input type="tel" id="age" autocomplete="off">
-</div>
-<button>Invia</button>
+        <div>
+            <label for="age">Quanti anni hai?</label>
+            <input type="tel" id="age" autocomplete="off">
+        </div>
+        <button>Invia</button>
+    </div>
     </form>
     <div class="final-ticket">
         <div class="ticket-header">Il tuo biglietto</div>
@@ -31,6 +36,8 @@
             <p id="price-total"></p>
         </div>
     </div>
+</div>
+</main>
     <script src="./js/script.js""></script>
 </body>
 </html>
