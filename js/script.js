@@ -49,13 +49,13 @@ const scontoOver = (prezzoBiglietto / 100) * 40;
 const bigliettoOver = prezzoBiglietto - scontoOver;
 let message;
 if (age <= 0) {
-    message = "inserisci età valida";
+    message = "Inserisci età valida";
 } else if (age < 18) {
-  message = "Con lo sconto Minorenni (del 20% sul prezzo totale) il tuo biglietto ora costa:" + " " + bigliettoMinorenni.toFixed(2) + "€";
+  message = "Ciao" + " " + name + " " + "con lo sconto Minorenni (del 20% sul prezzo totale) il tuo biglietto ora costa:" + " " + bigliettoMinorenni.toFixed(2) + "€";
 } else if(age > 65) {
-    message = "Con lo sconto Over 65 (del 40% sul prezzo totale) il tuo biglietto ora costa:" + " " + bigliettoOver.toFixed(2) + "€";
+    message = "Ciao" + " " + name + " " + "con lo sconto Over 65 (del 40% sul prezzo totale) il tuo biglietto ora costa:" + " " + bigliettoOver.toFixed(2) + "€";
 } else {
-    message = "Il tuo biglietto costa:" + " " + prezzoBiglietto.toFixed(2) + "€";
+    message = "Ciao" + " " + name + " " + "il tuo biglietto costa:" + " " + prezzoBiglietto.toFixed(2) + "€";
 } console.log(message);
 
 nameElem.innerHTML = name;

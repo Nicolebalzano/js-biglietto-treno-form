@@ -4,44 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+    crossorigin="anonymous"
+  />
     <title>Document</title>
 </head>
 
 <body>
-    <main class="py-5">
+    <main class="py-5 bg-primary-subtle m-5">
         <div class="container">
              <div class="row">
                 <div class="col-12 col-lg-8">
-
-    <form action="" id="ticket-form">
+                    <h1 class="text-primary-emphasis">Calcola il prezzo del tuo biglietto</h1>
+    <form action="" id="ticket-form" class="border border-primary p-5">
         <div class="row">
             <div class="col-12 col-lg-6">
-            <label for="name">Nome e cognome passeggero:</label>
-            <input type="tel" id="name" autocomplete="off">
+            <label for="name" class="form-label fw-medium">Nome e cognome passeggero:</label>
+            <input type="tel" id="name" class="form-control" autocomplete="off">
+        </div> 
+        <div class="col-12 col-lg-6">
+            <label for="km" class="form-label fw-medium">Quanti Kilometri (km) devi percorrere?</label>
+            <input type="tel" id="km" class="form-control" autocomplete="off">
         </div>
         <div class="col-12 col-lg-6">
-            <label for="km">Quanti Kilometri (km) devi percorrere?</label>
-            <input type="tel" id="km" autocomplete="off">
+            <label for="age" class="form-label fw-medium mt-2">Quanti anni hai?</label>
+            <input type="tel" id="age" class="form-control" autocomplete="off">
         </div>
-        <div class="col-12 col-lg-6">
-            <label for="age">Quanti anni hai?</label>
-            <input type="tel" id="age" autocomplete="off">
-        </div>
-        <button>Invia</button>
+        <button class="btn btn-primary mt-3 py-2 fw-bold">Invia</button>
     </div>
     </form>
     </div>
     <div class="col-12 col-lg-4">
     <div class="final-ticket">
-        <div class="ticket-header">Il tuo biglietto</div>
+        <div class="ticket-header fw-bold mb-4">Boolean airlines</div>
         <div class="ticket-body">
             <div class="row">
-                <div class="col-8">
-            <h4>Nome passeggero</h4>
-            <p id="passenger-name"></p>
-            <h3>Totale del prezzo</h3>
+                <div class="col-12">
+            <h4 class="border-bottom border-primary-subtle pb-2 text-primary-emphasis">Nome passeggero</h4>
+            <p id="passenger-name" ></p>
+            <h3 class="border-bottom border-primary-subtle pb-2 text-primary-emphasis">Totale prezzo biglietto</h3>
             <p id="price-total"></p>
             </div>
         </div>
